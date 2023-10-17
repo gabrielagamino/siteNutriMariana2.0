@@ -61,7 +61,11 @@
         display: none;
     }
 
-    #mens3, .pcserv1{
+    #mens3 {
+        display: none;
+    }
+
+    .pcserv1{
         display: inline;
     }
 
