@@ -116,7 +116,7 @@ section.solida>div>img:hover{
     cursor: pointer;
     scale: 1.09;
 }
-#mens1, #mens2{
+#mens1, #mens2, #mens3{
     display: none;
     background-color: var(--corBranco);
     border: 1em solid var(--corMarrom);
@@ -124,6 +124,10 @@ section.solida>div>img:hover{
     padding: 0.3em;
     margin: 0.5em;
     animation: none;
+}
+
+.pcmens1, .pcserv1 {
+    display: none;
 }
 
 
