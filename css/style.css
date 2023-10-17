@@ -292,6 +292,29 @@ footer>a:hover {
 	}
 }
 
+/*Termos de Uso e Política de Privacidade*/
+
+section#termos>ol, li, section#priv>ol, li{
+    font-size: 1em;
+    text-align: justify;
+    color: var(--corBranco);
+    text-shadow: rgba(0, 0, 0, 0.247) 2px 2px 10px;
+    font-weight: 600;
+    margin-top: 0.4em;
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+section#termos>p>a, section#priv>p>a{
+    text-decoration: none;
+    color: var(--corPreto);
+}
+
+section#termos>p>a:hover, section#priv>p>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 
