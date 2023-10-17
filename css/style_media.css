@@ -3,22 +3,22 @@
 /*tablets*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
     section#banner {
-        background-image: url("imagens/background.png");
+        background-image: url("../imagens/background.png");
     }
 
     section#banner2 {
-        background: var(--corBranco) url("imagens/background2.png") no-repeat;
+        background: var(--corBranco) url("../imagens/background2.png") no-repeat;
         background-position: center center;
         background-size: cover;
     }
 }
-/*laptops*/
+/*laptops e mais*/
 @media screen and (min-width: 769px){
     section#banner {
-        background-image: url("imagens/background.png");
+        background-image: url("../imagens/background.png");
     }
     section#banner2 {
-        background: var(--corBranco) url("imagens/background2.png") no-repeat;
+        background: var(--corBranco) url("../imagens/background2.png") no-repeat;
         background-position: center center;
         background-size: cover;
     }
@@ -28,7 +28,7 @@
     header>h1 {
         text-align: left;
     }
-    header >p {
+    header>p {
         text-align: left;
     }
     section#banner>div{

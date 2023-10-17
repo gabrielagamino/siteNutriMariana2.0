@@ -43,7 +43,7 @@ section {
     height: 100%;
 }
 section#banner {
-    background: var(--corMarrom) url("imagens/bg_mobile.jpg") no-repeat;
+    background: var(--corMarrom) url("../imagens/bg_mobile.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     height: 800px;  
@@ -52,7 +52,7 @@ section.solida {
     background-color: var(--corMarrom);
 }
 section#banner2 {
-    background: var(--corMarrom) url("imagens/bg_mobile2.png") no-repeat;
+    background: var(--corMarrom) url("../imagens/bg_mobile2.png") no-repeat;
     background-position: center center;
     background-size: cover;
     height: 900px;
@@ -123,6 +123,7 @@ section.solida>div>img:hover{
     border-radius: 2em;
     padding: 0.3em;
     margin: 0.5em;
+    animation: none;
 }
 
 
@@ -261,6 +262,31 @@ footer>a:hover {
     color: var(--corPreto);
 }
 
+/*Animações*/
+@keyframes entrando {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-1em);
+	}
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+@keyframes saindo {
+	0% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-1em);
+        display: none;
+	}
+}
 
 
 

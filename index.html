@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutricionista Mariana Gamino</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_media.css">
-    <!-- jQuery -->
-    <script src="jquery-3.7.0.min.js"></script>
-    <script src="jquery-ui.js"></script>
-    
+    <link rel="stylesheet" href="css/style_media.css">    
 </head>
 <body>
     <main>
@@ -29,9 +25,9 @@
             <h2>Quer um Protocolo pensado especialmente para você?</h2>
             <p class="white">Faça a sua <span class="black">Consulta de Avaliação</span> e eu vou criar um Protocolo focado nos <span class="black">seus objetivos</span>.</p>
             <div>
-                <img id="serv1" class="serv1" src="imagens/serv1.png" alt="Atendimento presencial">
+                <img id="serv1" class="serv1" src="imagens/serv1.png" alt="Atendimento presencial" onclick="verificar()">
                 <p id="mens1" class="mens1">Avaliação física (pele, cabelo, unhas, dobras cutâneas, bioimpedância e perímetros), avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
-                <img id="serv2" class="serv2" src="imagens/serv2.png" alt="Atendimento online">
+                <img id="serv2" class="serv2" src="imagens/serv2.png" alt="Atendimento online" onclick="verificar2()">
                 <p id="mens2" class="serv2">Avaliação física por fotos e medidas, avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
             </div>
         </section>
@@ -85,27 +81,30 @@
 
 <!-- Script -->
 <script>
-    $(document).ready(function(){
-    var click = "up";
-
-    if(click ==="up"){
-                        $("#serv1").click(function(){
-                        $("#mens1").slideDown();
-                        alert(click)
-                        
-                        
-                         });
-                         click = "down";
-                         return false;             
-            } else {
-        
-                    $("#serv1").click(function(){
-                        $("#mens1").slideUp();
-                    });
-                   
-
+    var visible = "not";
+    var visible2 = "not";
+    function verificar(){
+    var msg1 = document.getElementById('mens1');   
+    if (visible=="not"){
+        msg1.style.display = 'block';
+        msg1.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
+        visible = "yes";
+    } else {
+        msg1.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
+        visible = "not";
     }
-});   
+ }
+ function verificar2(){
+    var msg2 = document.getElementById('mens2');    
+    if (visible2=="not"){
+        msg2.style.display = 'block';
+        msg2.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
+        visible2 = "yes";
+    } else {   
+        msg2.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
+        visible2 = "not";
+    }
+ }
 </script>
 
 </html>
