@@ -89,9 +89,10 @@
         msg.style.display = 'block';
         msg.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
 
-    } else {
-        msg.style.display = 'none';
+    } else { 
         msg.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
+        setTimeout(() => { msg.style.display = 'none'; }, 500);
+        
     }
  }
 
