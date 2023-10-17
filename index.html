@@ -25,10 +25,10 @@
             <h2>Quer um Protocolo pensado especialmente para você?</h2>
             <p class="white">Faça a sua <span class="black">Consulta de Avaliação</span> e eu vou criar um Protocolo focado nos <span class="black">seus objetivos</span>.</p>
             <div>
-                <img id="serv1" class="serv1" src="imagens/serv1.png" alt="Atendimento presencial" onclick="verificar()">
+                <img id="serv1" class="serv1" src="imagens/serv1.png" alt="Atendimento presencial" onclick="verificar('mens1')">
                 <p id="mens1" class="mobmsg1">Avaliação física (pele, cabelo, unhas, dobras cutâneas, bioimpedância e perímetros), avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
-                <img id="serv1" class="pcserv1" src="imagens/serv1.png" alt="Atendimento presencial" onclick="verificar3()">
-                <img id="serv2" class="serv2" src="imagens/serv2.png" alt="Atendimento online" onclick="verificar2()">
+                <img id="serv1" class="pcserv1" src="imagens/serv1.png" alt="Atendimento presencial" onclick="verificar('mens3')">
+                <img id="serv2" class="serv2" src="imagens/serv2.png" alt="Atendimento online" onclick="verificar('mens2')">
                 <p id="mens3" class="pcmens1">Avaliação física (pele, cabelo, unhas, dobras cutâneas, bioimpedância e perímetros), avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
                 <p id="mens2">Avaliação física por fotos e medidas, avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
             </div>
@@ -83,44 +83,18 @@
 
 <!-- Script -->
 <script>
-    var visible = "not";
-    var visible2 = "not";
-    var visible3 = "not";
-    function verificar(){
-    var msg1 = document.getElementById('mens1');   
-    if (visible=="not"){
-        msg1.style.display = 'block';
-        msg1.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
-        visible = "yes";
+    function verificar(who){
+    var msg = document.getElementById(who);   
+    if (msg.style.display!="block"){
+        msg.style.display = 'block';
+        msg.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
+
     } else {
-        msg1.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
-        visible = "not";
+        msg.style.display = 'none';
+        msg.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
     }
  }
 
- function verificar3(){
-    var msg3 = document.getElementById('mens3');   
-    if (visible3=="not"){
-        msg3.style.display = 'block';
-        msg3.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
-        visible3 = "yes";
-    } else {
-        msg3.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
-        visible3 = "not";
-    }
- }
-
- function verificar2(){
-    var msg2 = document.getElementById('mens2');    
-    if (visible2=="not"){
-        msg2.style.display = 'block';
-        msg2.style.animation = 'entrando 0.5s ease-out 0s 1 normal forwards';
-        visible2 = "yes";
-    } else {   
-        msg2.style.animation = 'saindo 0.5s ease-out 0s 1 normal forwards';
-        visible2 = "not";
-    }
- }
 </script>
 
 </html>
