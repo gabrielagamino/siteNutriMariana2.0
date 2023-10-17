@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Francois+One&family=League+Spartan&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/*Geral*/
+:root {
+    --corMarrom: #A77051;
+    --corVerde: #516541;
+    --corAmarelo: #D48001;
+    --corVerdeZap: #25d366;
+    --corBranco: white;
+    --corPreto: black;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'League Spartan', Arial, Verdana, sans-serif;
+}
+p.black {
+    color: var(--corPreto);
+}
+p.white{
+    color: var(--corBranco);
+}
+span.yellow {
+    color: var(--corAmarelo);
+}
+span.black{
+    color: var(--corPreto);
+}
+html {
+    height: 100vh;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.342) -2px 1px 20px 0px;
+}
+section {
+    width: 100%;
+    height: 100%;
+}
+section#banner {
+    background: var(--corMarrom) url("imagens/bg_mobile.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;  
+}      
+section.solida {
+    background-color: var(--corMarrom);
+}
+section#banner2 {
+    background: var(--corMarrom) url("imagens/bg_mobile2.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 900px;
+}
+
+/*Cabeçalho*/
+header>h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3.5em;
+    margin-bottom: 0.1em;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.24);
+    color: var(--corAmarelo);
+    text-align: center;
+}
+header>p {
+    font-family:'League Spartan', Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1em;
+}
+p#cham, p#cham {
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10px;
+    line-height: 1em;
+
+}
+span#c{
+    font-family: 'Francois One', sans-serif;
+}
+
+/*Serviços*/
+section.solida>h2{
+    font-size: 3em;
+    text-align: center;
+    color: var(--corBranco);
+    text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
+    padding: 0.5em;
+}
+section.solida>p{
+    font-size: 2em;
+    text-align: center;
+    color: var(--corBranco);
+    text-shadow: rgba(0, 0, 0, 0.247) 2px 2px 10px;
+    font-weight: 600;
+    margin-top: 0.4em;
+    padding: 0.5em;
+}
+section.solida>div{
+    text-align: center;
+    
+}
+section.solida>div>img{
+    border-radius: 50%;
+    width: 16em;
+    height: 16em;
+    margin: 1em;
+}
+
+section.solida>div>img:hover{
+    cursor: pointer;
+    scale: 1.09;
+}
+#mens1, #mens2{
+    display: none;
+    background-color: var(--corBranco);
+    border: 1em solid var(--corMarrom);
+    border-radius: 2em;
+    padding: 0.3em;
+    margin: 0.5em;
+}
+
+
+/*Depoimentos*/
+section#branca>h2{
+    font-size: 3em;
+    text-align: center;
+    color: var(--corVerde);
+    text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
+    margin: 0.4em 0.2em;
+}
+section#branca>div{
+    width: 100%;
+    text-align: center;
+}
+section#branca>div>img{
+    width: 80%;
+}
+
+/*Agende*/
+section.solida>div#bot>{
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 2em;
+    
+}
+section.solida>div#bot>div#btn {
+    display: block;
+    margin: auto;
+    font-size: 1.7em;
+    line-height: 1em;
+    background-color: var(--corVerdeZap);
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.219) -4px 4px 0px;    
+}
+section.solida>div#bot>div#btn:hover {
+    background-color: #0bec5e;
+    transform: scale(1.09);
+    cursor: pointer;
+}
+section.solida>div#bot>div#btn>a{
+        text-decoration: none;
+        color: white;
+        line-height: 0.1em; 
+}
+section.solida>h2#agende{
+    font-size: 2em;
+    padding: 2em;
+}
+
+/*Quem sou eu*/
+section#banner2{
+    position: relative;
+}
+section#banner2>h2{
+    font-size: 3em;
+    text-align: center;
+    color: var(--corVerde);
+    text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
+    padding: 0.5em;
+}
+section#banner2>div#quem{
+    display: block;
+    text-align: justify;
+    padding: 0.5em;
+    background-color: var(--corBranco);
+    border-radius: 0.6em;
+    width: 90%;
+    margin: auto;
+    border: rgb(201, 201, 201) solid 0.1em;
+    box-shadow: -8px 8px 0px 0px rgb(201, 201, 201);
+}
+section#banner2>div#quem>p{
+    font-size: 1.2em;
+}
+section#banner2>div#insta{
+    text-align: center;
+    position: absolute;
+    bottom: 2em;
+    left: 15%;
+}
+
+section#banner2>div#insta:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+section#banner2>div#insta>a{
+    font-size: 1.5em;
+    background-color: var(--corAmarelo);
+    text-decoration: none;
+    color: var(--corBranco);
+    border-radius: 1em;
+    padding: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.219) -4px 4px 0px;
+    
+}
+section#banner2>div#insta>a:hover{
+    background-color: #f19202;
+}
+/*Onde estou*/
+section.solida>h3{
+    font-size: 2em;
+    text-align: center;
+    color: var(--corBranco);
+    text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
+    padding: 0.5em;
+}
+section.solida>p#email{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--corBranco);
+    text-shadow: rgba(0, 0, 0, 0.247) 2px 2px 10px;
+    font-weight: 600;
+    margin-top: 0.4em;
+    padding: 0.5em;
+}
+
+/*Rodapé*/
+footer{
+    padding-top: 5em;
+    padding-bottom: 1em;
+    background-color: var(--corMarrom);
+    color: var(--corBranco);
+    text-align: center;
+    font-size: 0.8em;
+}
+footer>a {
+    text-decoration: none;
+    color: white;
+}
+footer>a:hover {
+    text-decoration: underline;
+    color: var(--corPreto);
+}
+
+
+
+
+

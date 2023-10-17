@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista Mariana Gamino</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_media.css">
+    <!-- jQuery -->
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    
+</head>
+<body>
+    <main>
+        <section id="banner">
+            <header>
+                <h1>Mariana Gamino</h1>
+                <p class="black"><strong>Nutricionista</strong></p>
+                <p class="black">CRN2 13310</p>
+            </header>
+            <div>
+                <p class="black" id="cham">
+                    Você na sua <span id="c" class="yellow">melhor</span><br>versão!
+                </p>
+            </div>
+        </section>
+        <section class="solida">
+            <h2>Quer um Protocolo pensado especialmente para você?</h2>
+            <p class="white">Faça a sua <span class="black">Consulta de Avaliação</span> e eu vou criar um Protocolo focado nos <span class="black">seus objetivos</span>.</p>
+            <div>
+                <img id="serv1" class="serv1" src="imagens/serv1.png" alt="Atendimento presencial">
+                <p id="mens1" class="mens1">Avaliação física (pele, cabelo, unhas, dobras cutâneas, bioimpedância e perímetros), avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
+                <img id="serv2" class="serv2" src="imagens/serv2.png" alt="Atendimento online">
+                <p id="mens2" class="serv2">Avaliação física por fotos e medidas, avaliação nutricional, avaliação de exames, avaliação de suplementação, anamnese com histórico de saúde e hábitos, realização de questionários de rastreamento metabólico e microbiota.</p>
+            </div>
+        </section>
+        <section id="branca">
+            <h2>O que meus pacientes acham do meu método</h2>
+            <div><img src="imagens/depo.png" alt="Depoimentos dos clientes"></div>
+        </section>
+        <section class="solida">
+            <h2 id="agende">É possível <span class="black">emagrecer com saúde</span> e eu estou
+                pronta para te ajudar <span class="black">a realizar esse sonho</span></h2>
+            
+            <div id="bot">
+                <div id="btn">
+                    <a href="https://wa.me/555192539661?text=Quero%20saber%20mais%20sobre%20a%20consulta%20de%20avaliação!" target="_blank"><i class="bi bi-whatsapp"></i> Eu quero saber mais sobre a Consulta de Avaliação</a>
+                </div>
+                <br><br><br>
+            </div>
+        </section>
+        <section id="banner2">
+            <h2>Quem sou eu</h2>
+            <div id="quem">
+                <p>Mariana Gamino da Costa, mas pode me chamar de Mamah, prazer!</p>
+
+                <p>Formada em Nutrição e em Educação física na UFPel, Mestre em Educação física e Especialista em Nutrição Esportiva e Emagrecimento. Com mais de 11 anos em atendimento clínico, tenho o foco em saúde e qualidade de vida, usando a abordagem da Medicina do Estilo de Vida (MEV) e Nutrição Emocional e Comportamental (NEC), para ajudar você no seu objetivo de emagrecimento, hipertrofia, desempenho, estética, melhora da saúde e prevenção de doenças com resultados eficazes e duradouros. Também sou professora e palestrante.</p>
+            </div>
+            <div id="insta">
+                <a href="https://www.instagram.com/nutrimarianagamino/" target="_blank"><i class="bi bi-instagram"></i> @nutrimarianagamino</a>
+            </div>
+        </section>
+        <section class="solida">
+            <h2>Atendimentos Presenciais em:</h2>
+            <p><i class="bi bi-geo-alt-fill"></i> Coletivvo OM - Deodoro, 1205 A Pelotas/RS</p>
+
+            <h3>Contato para Palestras, cursos, treinamentos e serviço de Rotulagem Nutricional:</h2>
+            <p id="email"><i class="bi bi-envelope-fill"></i> nutrimarianagamino@gmail.com</a></p>
+
+        </section>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/555192539661?text=Quero%20saber%20mais%20sobre%20a%20consulta%20de%20avaliação!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+        <footer>
+         <a href="termos.html">Termos de Uso |</a> <a href="politica.html">Política de Privacidade</a><br><br>
+         Nutricionista Mariana Gamino - 2023. Todos os direitos reservados. <br>
+         Desenvolvido por <a href="https://github.com/gabrielagamino" target="_blank">Gabriela Gamino</a>
+        </footer>
+    </main>
+    
+</body>
+
+<!-- Script -->
+<script>
+    $(document).ready(function(){
+    var click = "up";
+
+    if(click ==="up"){
+                        $("#serv1").click(function(){
+                        $("#mens1").slideDown();
+                        alert(click)
+                        
+                        
+                         });
+                         click = "down";
+                         return false;             
+            } else {
+        
+                    $("#serv1").click(function(){
+                        $("#mens1").slideUp();
+                    });
+                   
+
+    }
+});   
+</script>
+
+</html>
+
