@@ -129,8 +129,7 @@ section.solida>div>img:hover{
 
 /*Depoimentos*/
 section#branca>h2{
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
+    font-weight: 400;
     font-size: 3em;
     text-align: center;
     color: var(--corVerde);
