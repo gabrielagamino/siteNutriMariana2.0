@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-/*tablets*/
 
+/*tiny*/
 @media screen and (max-width: 350px) {
     section.solida>p#email{
         font-size: 1.2em;
@@ -10,10 +10,11 @@
         font-size: 1.2em;
     }
 }
+
+/*tablets*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
     section#banner {
-        background-image: url("../imagens/bg_tablet1.png");
-        
+        background-image: url("../imagens/bg_tablet1.png");   
     }
 
     section#banner2 {
@@ -54,7 +55,6 @@
     section#banner2>h2{
         text-align: left;
     }
-
     section#banner2>div#quem{
         width: 60%;
         margin-left: 2em;
@@ -62,24 +62,17 @@
     section#banner2>div#quem>p{
         font-size: 1.8em;
     }
-
     section#banner2>div#insta{
         left: 5%;
         width: auto;
     }
-
     .mobmsg1, .serv1{
         display: none;
     }
-
     #mens3 {
         display: none;
     }
-
     .pcserv1{
         display: inline;
     }
-
-  
-
 }
