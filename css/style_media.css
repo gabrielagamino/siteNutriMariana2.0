@@ -3,7 +3,27 @@
 
 /*tiny*/
 @media screen and (max-width: 350px) {
-    section.solida>p#email{
+    section#banner2 {
+        background: var(--corMarrom) url("../imagens/bg_mobile3.png") no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 900px;
+    }
+    header>h1{
+        font-size: 3em;
+        line-height: 0.8em;
+        padding-top: 0.5em;
+    }
+    p#cham{
+        font-size: 2.5em;
+    }
+    section.solida>h2,section.solida>h3{
+        font-size: 1.8em;
+    }
+    section#branca>h2,section#banner2>h2{
+        font-size: 2.5em;
+    }
+    section.solida>p#email,section.solida>p{
         font-size: 1.2em;
     }
     section#banner2>div#insta>a{
