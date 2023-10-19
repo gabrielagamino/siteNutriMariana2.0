@@ -43,7 +43,7 @@ section {
     height: 100%;
 }
 section#banner {
-    background: var(--corMarrom) url("../imagens/bg_mobile.jpg") no-repeat;
+    background: var(--corMarrom) url("../imagens/bg_mobile1.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     height: 800px;  
@@ -210,7 +210,8 @@ section#banner2>div#insta{
     text-align: center;
     position: absolute;
     bottom: 2em;
-    left: 15%;
+    width: 80%;
+    left: 10%;
 }
 
 section#banner2>div#insta:hover{

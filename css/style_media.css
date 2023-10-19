@@ -1,13 +1,23 @@
 @charset "UTF-8";
 
 /*tablets*/
+
+@media screen and (max-width: 350px) {
+    section.solida>p#email{
+        font-size: 1.2em;
+    }
+    section#banner2>div#insta>a{
+        font-size: 1.2em;
+    }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
     section#banner {
-        background-image: url("../imagens/background.png");
+        background-image: url("../imagens/bg_tablet1.png");
+        
     }
 
     section#banner2 {
-        background: var(--corBranco) url("../imagens/background2.png") no-repeat;
+        background: var(--corBranco) url("../imagens/bg_tablet2.png") no-repeat;
         background-position: center center;
         background-size: cover;
     }
@@ -15,10 +25,10 @@
 /*laptops e mais*/
 @media screen and (min-width: 769px){
     section#banner {
-        background-image: url("../imagens/background.png");
+        background-image: url("../imagens/bg1.png");
     }
     section#banner2 {
-        background: var(--corBranco) url("../imagens/background2.png") no-repeat;
+        background: var(--corBranco) url("../imagens/bg2.png") no-repeat;
         background-position: center center;
         background-size: cover;
     }
@@ -55,6 +65,7 @@
 
     section#banner2>div#insta{
         left: 5%;
+        width: auto;
     }
 
     .mobmsg1, .serv1{
