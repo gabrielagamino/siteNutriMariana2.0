@@ -134,6 +134,7 @@ section#branca>h2{
     color: var(--corVerde);
     text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
     margin: 0.4em 0.2em;
+    -webkit-appearance: none;
 }
 section#branca>div{
     width: 100%;
