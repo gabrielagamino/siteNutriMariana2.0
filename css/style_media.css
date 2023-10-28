@@ -42,6 +42,11 @@
         background-position: center center;
         background-size: cover;
     }
+
+    section#banner2>div#quem>p{
+        font-size: 1.3em;
+        line-height: 0.8em;
+    }
 }
 /*laptops e mais*/
 @media screen and (min-width: 769px){
@@ -80,7 +85,8 @@
         margin-left: 2em;
     }
     section#banner2>div#quem>p{
-        font-size: 1.8em;
+        font-size: 1.4em;
+        line-height: 1em;
     }
     section#banner2>div#insta{
         left: 5%;
