@@ -122,50 +122,41 @@
  }
 
     jQuery(document).ready(function ($) {
-
-        const slide = jQuery('.carousel-slide');
-        const images = jQuery('.carousel-slide img');
+        const slide = $('.carousel-slide');
+        const images = $('.carousel-slide img');
         let counter = 0;
 
-        jQuery('.carousel-control-prev').on('click', function () {
+        function updateSlide() {
+            slide.css('transform', `translateX(-${counter * 100}%)`);
+        }
+
+        $('.carousel-control-prev').on('click', function () {
             if (counter > 0) {
                 counter--;
                 updateSlide();
             }
         });
 
-        jQuery('.carousel-control-next').on('click', function () {
+        $('.carousel-control-next').on('click', function () {
             if (counter < images.length - 1) {
                 counter++;
                 updateSlide();
             }
         });
 
-        function updateSlide() {
-            slide.css('transform', `translateX(-${counter * 100}%)`);
-        }
-    });
-
-    $(document).ready(function() {
-    const slide = $('.carousel-slide');
-    let counter = 0;
-
-    slide.swipe({
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (direction === 'left' && counter < images.length - 1) {
-                counter++;
-                updateSlide();
-            } else if (direction === 'right' && counter > 0) {
-                counter--;
-                updateSlide();
+        slide.swipe({
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction === 'left' && counter < images.length - 1) {
+                    counter++;
+                    updateSlide();
+                } else if (direction === 'right' && counter > 0) {
+                    counter--;
+                    updateSlide();
+                }
             }
-        }
+        });
     });
 
-    function updateSlide() {
-        slide.css('transform', `translateX(-${counter * 100}%)`);
-    }
-});
 
 
 </script>
