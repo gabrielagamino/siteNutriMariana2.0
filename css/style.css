@@ -40,7 +40,7 @@ html {
     height: 100vh;
 }
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.342) -2px 1px 20px 0px;
 }
@@ -156,6 +156,46 @@ section#branca>div{
 section#branca>div>img{
     width: 80%;
 }
+
+.carousel-container {
+    position: relative;
+    max-width: 100%; /* Para garantir que o carrossel se ajuste à largura do contêiner pai. */
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Ocupa 100% da largura do contêiner. */
+}
+
+.carousel-slide img {
+    width: 100%; /* Ocupa 100% da largura do contêiner. */
+    height: auto; /* A altura se ajustará automaticamente à largura, mantendo a proporção. */
+}
+
+.nav-button {
+    cursor: pointer;
+    position: absolute; /* Posiciona os botões de forma absoluta dentro da div */
+    top: 50%; /* Move os botões para a metade da altura */
+    transform: translateY(-50%); /* Corrige o alinhamento vertical */
+}
+
+#prev {
+    left: 0; /* Alinha o botão "Anterior" à esquerda */
+}
+
+#next {
+    right: 0; /* Alinha o botão "Próximo" à direita */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
 
 /*Agende*/
 section.solida>div#bot>{
