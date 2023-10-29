@@ -2,7 +2,7 @@
 
 
 /*tiny*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
     section#banner2 {
         background: var(--corMarrom) url("../imagens/bg_mobile3.png") no-repeat;
         background-position: center center;
@@ -24,10 +24,14 @@
         font-size: 2.5em;
     }
     section.solida>p#email,section.solida>p{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     section#banner2>div#insta>a{
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+    section.solida>div>img{
+        width: 14em;
+        height: 14em;
     }
 }
 
@@ -46,6 +50,7 @@
     section#banner2>div#quem>p{
         font-size: 1.3em;
         line-height: 0.8em;
+        margin-bottom: 0em;
     }
 }
 /*laptops e mais*/

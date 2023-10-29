@@ -63,11 +63,9 @@ section#banner2 {
     background-size: cover;
     height: 900px;
 }
-
 h2,h3 {
     font-family: 'Francois One', Arial, Helvetica, sans-serif;
 }
-
 
 /*Cabeçalho*/
 header>h1 {
@@ -146,8 +144,7 @@ section#branca>h2{
     text-align: center;
     color: var(--corVerde);
     text-shadow: rgba(0, 0, 0, 0.473) 2px 2px 10px;
-    margin: 0.4em 0.2em;
-    
+    margin: 0.4em 0.2em;   
 }
 section#branca>div{
     width: 100%;
@@ -156,38 +153,32 @@ section#branca>div{
 section#branca>div>img{
     width: 80%;
 }
-
 .carousel-container {
     position: relative;
-    max-width: 100%; /* Para garantir que o carrossel se ajuste à largura do contêiner pai. */
+    max-width: 100%;
     overflow: hidden;
 }
-
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease;
-    width: 100%; /* Ocupa 100% da largura do contêiner. */
+    width: 100%;
 }
-
 .carousel-slide img {
-    width: 100%; /* Ocupa 100% da largura do contêiner. */
-    height: auto; /* A altura se ajustará automaticamente à largura, mantendo a proporção. */
+    width: 100%;
+    height: auto;
 }
-
 .nav-button {
     cursor: pointer;
-    position: absolute; /* Posiciona os botões de forma absoluta dentro da div */
-    top: 50%; /* Move os botões para a metade da altura */
-    transform: translateY(-50%); /* Corrige o alinhamento vertical */
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
+} 
 .carousel-control-next-icon {
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
+}
 
 /*Agende*/
 section.solida>div#bot>{
@@ -221,9 +212,9 @@ section.solida>h2#agende{
     font-size: 2em;
     padding: 2em;
 }
-
 section.solida>h2>span#emagrecer{
     font-family: 'Francois One', sans-serif;
+    font-size: 1em;
 }
 
 /*Quem sou eu*/
@@ -250,6 +241,8 @@ section#banner2>div#quem{
 }
 section#banner2>div#quem>p{
     font-size: 1.2em;
+    line-height: 0.9em;
+    margin-bottom: 0em;
 }
 section#banner2>div#insta{
     text-align: center;
@@ -290,6 +283,7 @@ section.solida>p#email{
     text-shadow: rgba(0, 0, 0, 0.247) 2px 2px 10px;
     margin-top: 0.4em;
     padding: 0.5em;
+    margin-bottom: 0em;
 }
 
 /*Rodapé*/
@@ -336,11 +330,10 @@ footer>a:hover {
 
 /*Termos de Uso e Política de Privacidade*/
 section#termos>ol, li, section#priv>ol, li{
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: justify;
     color: var(--corBranco);
     text-shadow: rgba(0, 0, 0, 0.247) 2px 2px 10px;
-    font-weight: 600;
     margin-top: 0.4em;
     margin-left: 1em;
     padding: 0.5em;
@@ -354,15 +347,16 @@ section#termos>p>a:hover, section#priv>p>a:hover{
     cursor: pointer;
 }
 section.solida>a.btnIni{
-    margin: 0 1em;
+    margin: 1em;
     text-align: left;
     font-size: 1.5em;
     background-color: var(--corAmarelo);
     text-decoration: none;
     color: var(--corBranco);
     border-radius: 1em;
-    padding: 0.7em;
-    box-shadow: rgba(0, 0, 0, 0.219) -4px 4px 0px; 
+    padding: 0.6em;
+    box-shadow: rgba(0, 0, 0, 0.219) -4px 4px 0px;
+    
 }
 section.solida>a.btnIni:hover{
     background-color: #f19202;
